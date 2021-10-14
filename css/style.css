@@ -15,24 +15,20 @@ body {
     margin-left: -2px !important;
     margin-right: -2px !important;
 }
-.contact-us ul {
+div.contact-us ul {
     margin: 20px 0 24px 0;
     padding: 0;
     text-align: right;
 }
-.contact-us ul li {
+div.contact-us ul li {
     display: inline-block;
     padding: 0 0 0 20px;
 }
-.contact-us ul li a {
+div.contact-us ul li a {
     color: #455560;
     text-decoration: none;
 }
-.no-padding {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-.contact-us input {
+div.contact-us input {
     border: 2px solid #cbd1d6;
     border-radius: 0;
     float: right;
@@ -42,7 +38,7 @@ body {
     width: 41.8%;
 }
 
-.contact-us .fa.fa-search {
+div.contact-us .fa.fa-search {
     color: #95a2ac;
     font-size: 19px;
     left: 57%;
@@ -50,7 +46,10 @@ body {
     bottom: 14px;
     padding-left: 14px;
 }
-
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 .main_menu-container {
 
     background: #96a4ad;
@@ -79,7 +78,7 @@ body {
     padding-left:  25px;
     max-height: 62px;
 }
-.main_menu .nav.navbar-nav li a span {
+.main_menu .nav.navbar-nav li a > span {
     left: 13px;
     position: relative;
 }
@@ -117,7 +116,7 @@ li.dropdown {
     position: absolute;
     z-index: 1;
 }
-.dropdown-content-products {
+.dropdown-content-categories {
     min-width: 242px !important;
 }
 .submenu {
@@ -246,14 +245,14 @@ li.dropdown {
     text-align: left;
 }
 #homePageCarousel .carousel-text h1 {
-    font-size: 80px;/* Approximation due to font substitution */
+    font-size: 80px;
     font-weight: 700;
-    line-height: 72px;/* Approximation due to font substitution */
+    line-height: 72px;
 }
-#homePageCarousel .carousel-text p {
-    font-size: 60px;/* Approximation due to font substitution */
+#homePageCarousel .carousel-text:nth-child(1) {
+    font-size: 60px;
     font-weight: 400;
-    line-height: 72px; /* Approximation due to font substitution */
+    line-height: 72px;
     margin: 0 0 26px;
 }
 #homePageCarousel .carousel-text .slider-btn{
@@ -361,46 +360,6 @@ li.dropdown {
     bottom: -80px;
 }
 
-.home-page-content-two-row {
-    margin-left: -135px;
-}
-.home-page-content-two-man {
-    margin-top: 144px;
-}
-.home-page-content-two-text {
-    margin-top: 90px;
-}
-.home-page-content-two-text p {
-    color:  #6c7b86;
-    font-size: 32px;/* Approximation due to font substitution */
-    font-weight: 400;
-    line-height: 42px;/* Approximation due to font substitution */
-    text-align: left;
-    margin-right: 20px;
-}
-.home-page-content-two-text img {
-    padding-top: 33px;
-    position: absolute;
-    right: 8%;
-}
-.home-page-footer-img {
-    margin-top: -110px;
-}
-.home-page-footer-img img:first-child {
-    visibility: hidden;
-}
-
-.footer-img-row {
-    margin-right: -190px;
-    margin-left: -5px;
-}
-.footer-man-img {
-    width: 18.0%;
-    margin: 0 36px -115px 35%;
-}
-.footer-car-img {
-    margin: 0 0 -135px 0;
-}
 .footer {
     background: #6c7c87;
 }
@@ -436,13 +395,12 @@ li.dropdown {
 .footer_sec_two ul {
     margin: 0;
     padding: 0;
-    font-weight: 500;
 }
-.footer_sec_two ul li {
+.footer_sec_two ul > li {
     display: block;
     padding: 0 0 4px;
+    font-weight: 700;
 }
-
 .footer_sec_two ul li a {
     color: #fff;
     font-size: 15px;
@@ -465,11 +423,18 @@ li.dropdown {
 .footer_sec_three ul {
     margin: 0;
     padding: 0;
-    font-weight: 500;
 }
-.footer_sec_three ul li {
+.footer_sec_three ul > li {
     display: block;
     padding: 0 0 4px;
+    font-weight: 700;
+}
+.footer_sec_two ul > li + li {
+    font-weight: 500;
+}
+
+.footer_sec_three ul > li + li {
+    font-weight: 500;
 }
 
 .footer_sec_three ul li a {
