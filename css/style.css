@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+:root {
+    --blue1: #004a8d;
+    --blue2: #445461;
+    --gray1: #95a2ac;
+    --gray2: #96a4ad;
+    --white1: #ffffff;
+    --black1: #000000;
+}
 body {
     margin:0;
     padding:0;
@@ -25,11 +32,11 @@ div.contact-us ul li {
     padding: 0 0 0 20px;
 }
 div.contact-us ul li a {
-    color: #455560;
+    color: var(--blue2);
     text-decoration: none;
 }
 div.contact-us input {
-    border: 2px solid #cbd1d6;
+    border: 2px solid var(--gray2);
     border-radius: 0;
     float: right;
     height: 46px;
@@ -39,7 +46,7 @@ div.contact-us input {
 }
 
 div.contact-us .fa.fa-search {
-    color: #95a2ac;
+    color: var(--gray2);
     font-size: 19px;
     left: 57%;
     position: absolute;
@@ -52,7 +59,7 @@ div.contact-us .fa.fa-search {
 }
 .main_menu-container {
 
-    background: #96a4ad;
+    background: var(--gray2);
     margin-top: 27px;
     min-height: 62px;
     max-height: 62px;
@@ -69,7 +76,7 @@ div.contact-us .fa.fa-search {
     float: none;
 }
 .main_menu .nav.navbar-nav li a {
-    color: #fff;
+    color: var(--white1);
     letter-spacing: 0.5px;
     line-height: 2;
     padding-right: 9px;
@@ -81,23 +88,20 @@ div.contact-us .fa.fa-search {
     position: relative;
 }
 .main_menu .nav.navbar-nav li a:hover {
-    background: #004a8d;
-    /*border-left: solid 1px #2e5b94;
-    border-right: solid 1px #2e5b94;
-    margin-left: -3px;*/
+    background: var(--blue1);
 }
 .main_menu .nav.navbar-nav li a:focus span, .main_menu .nav.navbar-nav li a:active span {
-    color: #fff;
+    color: var(--white1);
 }
 .main_menu .nav.navbar-nav li a:focus, .main_menu .nav.navbar-nav li a:active {
-    background: #004a8d;
+    background: var(--blue1);
 }
 .main_menu .nav.navbar-nav li a:hover span {
-    color:#004a8d;
+    color:var(--blue1);
 }
 
 li a, .dropbtn {
-    color: #000;
+    color: var(--black1);
 }
 
 li.dropdown {
@@ -105,7 +109,7 @@ li.dropdown {
 }
 
 .dropdown-content {
-    background-color: #ffffff;
+    background-color: var(--white1);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     display: none;
     min-width: 230px;
@@ -122,7 +126,7 @@ li.dropdown {
     left: 100%;
     box-shadow: 8px 8px 16px -8px rgba(0, 0, 0, 0.2);
     min-width: 290px;
-    background-color: #ffffff;
+    background-color: var(--white1);
     padding-top: 20px;
     padding-bottom: 20px;
     position: absolute;
@@ -133,7 +137,7 @@ li.dropdown {
     display: block;
 }
 .submenu-container:hover .sub-dropbtn {
-    color: #004b8f !important;
+    color: var(--blue1) !important;
     font-size: 17px !important;
     font-weight: 600 !important;
     line-height: 36px !important;
@@ -142,10 +146,10 @@ li.dropdown {
     margin-left: 0 !important;
 }
 .submenu-container:hover .sub-dropbtn i {
-    color: #445461 !important;
+    color:  var(--blue2) !important;
 }
 .dropdown-content a {
-    color:  #445461 !important;
+    color:   var(--blue2) !important;
     font-size: 17px !important;
     font-weight: 400 !important;
     line-height: 36px !important;
@@ -158,7 +162,7 @@ li.dropdown {
     padding-right: 15px;
 }
 .dropdown-content a i {
-    color: #ffffff;
+    color: var(--white1);
 }
 .dropdown-content a:hover
 {
@@ -171,13 +175,13 @@ li.dropdown {
     margin-left: 0 !important;;
 }
 .dropdown-content a:hover i {
-    color:  #445461 !important;
+    color:   var(--blue2) !important;
 }
 .dropdown:hover {
-    background: #004a8d;
+    background: var(--blue1);
 }
 .dropdown:hover .dropbtn {
-    color: #fff;
+    color: var(--white1);
     letter-spacing: 0.5px;
     line-height: 2;
     padding-right: 9px;
@@ -185,7 +189,7 @@ li.dropdown {
     max-height: 62px;
 }
 .dropdown:hover .dropbtn span {
-    color:#004a8d;
+    color:var(--blue1);
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -237,7 +241,7 @@ li.dropdown {
     z-index: 10;
     padding-bottom: 75px;
     margin-left: -6px;
-    color: #fff;
+    color: var(--white1);
     text-align: left;
 }
 #homePageCarousel .carousel-text h1 {
@@ -252,12 +256,12 @@ li.dropdown {
     margin: 0 0 26px;
 }
 #homePageCarousel .carousel-text .slider-btn{
-    color: #ffffff;
+    color: var(--white1);
     font-size: 19px;
     font-weight: 600;
     line-height: 29.873px;
     text-align: left;
-    border: solid 2px #ffffff;
+    border: solid 2px var(--white1);
     padding: 13px 20px 12px 22px;
     margin-left: 5px;
     border-radius: 0;
@@ -284,7 +288,7 @@ li.dropdown {
     top: 35%;
 }
 .homePageSlide .left.carousel-control .icon-prev {
-    color: #ffffff;
+    color: var(--white1);
     font-size: 75px;
     opacity: 1;
     text-shadow: none;
@@ -295,7 +299,7 @@ li.dropdown {
     top: 35%;
 }
 .homePageSlide .right.carousel-control .icon-next {
-    color: #ffffff;
+    color: var(--white1);
     font-size: 75px;
     opacity: 1;
     text-shadow: none;
@@ -331,7 +335,7 @@ li.dropdown {
 }
 
 #triangle-up {
-    border-bottom: 31px solid #fff;
+    border-bottom: 31px solid var(--white1);
     border-left: 31px solid transparent;
     border-right: 31px solid transparent;
     bottom: 0;
@@ -369,12 +373,12 @@ li.dropdown {
     min-height: 542px;
 }
 .footer_sec_one h5 {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
     font-weight: 700;
 }
 .footer_sec_one p {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
     padding: 0 31% 0 0;
     font-weight: 500;
@@ -384,13 +388,13 @@ li.dropdown {
     padding-top: 28px;
 }
 .footer_sec_two h5 {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
     font-weight: 700;
     padding-bottom: 8px;
 }
 .footer_sec_two h5 a {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
     font-weight: 700;
 }
@@ -404,7 +408,7 @@ li.dropdown {
     font-weight: 700;
 }
 .footer_sec_two ul li a {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
 }
 .footer_sec_two {
@@ -412,13 +416,13 @@ li.dropdown {
     padding-left: 30px;
 }
 .footer_sec_three h5 {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
     font-weight: 700;
     padding-bottom: 8px;
 }
 .footer_sec_three h5 a {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
     font-weight: 700;
 }
@@ -440,7 +444,7 @@ li.dropdown {
 }
 
 .footer_sec_three ul li a {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
 }
 .footer_sec_three {
@@ -449,13 +453,13 @@ li.dropdown {
 }
 /***/
 .footer_sec_four h5 {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
     font-weight: 700;
     /*padding-bottom: 8px;*/
 }
 .footer_sec_four h5 a {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
     font-weight: 700;
 }
@@ -470,7 +474,7 @@ li.dropdown {
 }
 
 .footer_sec_four ul li a {
-    color: #fff;
+    color: var(--white1);
     font-size: 15px;
 }
 .footer_sec_four {
@@ -563,7 +567,7 @@ li.dropdown {
     margin-bottom: 20px;
 }
 .contact-us-form .form-control {
-    color:  #95a3ac;
+    color:  var(--gray1);
     font-size: 22px;
     font-weight: 400;
     height: auto;
@@ -589,14 +593,6 @@ li.dropdown {
 .contact-us-form  .checkbox {
     padding-top: 0;
 }
-.contact-us-form  .checkbox .tag {
-    color: #595959;
-    display: block;
-    float: left;
-    font-weight: bold;
-    position: relative;
-    width: 120px;
-}
 .contact-us-form  .checkbox label {
     display: inline;
     padding-left: 0;
@@ -617,7 +613,7 @@ li.dropdown {
     background-color: #595959;
 }
 .contact-us-form  .checkbox-txt {
-    color: #95a3ac;
+    color: var(--gray1);
     font-size: 22px;
     font-weight: 400;
     display: table-cell;
@@ -626,7 +622,7 @@ li.dropdown {
 .contact-us-form  button {
     background-color: white;
     border: 1px solid #ccc;
-    color: #95a3ac;
+    color: var(--gray1);
     font-size: 22px;
     font-weight: 400;
     height: auto;
@@ -636,12 +632,12 @@ li.dropdown {
 }
 
 .contact-us-form  button:hover {
-    color: #ffffff;
+    color: var(--white1);
     background-color: #ed2724;
 }
 .contact-us-form .form-hint {
-    color:  #95a3ac;
-    font-size: 18px;/* Approximation due to font substitution */
+    color:  var(--gray1);
+    font-size: 18px;
     font-style: italic;
     font-weight: 400;
     margin-left: 20px;
@@ -653,7 +649,7 @@ li.dropdown {
     text-align: center;
 }
 .arro-icon .fa.fa-angle-up {
-    color: #95a2ac;
+    color: var(--gray1);
     font-size: 95px;
     letter-spacing: 2px;
 }
