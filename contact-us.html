@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>
-        Blog | Home
+        Blog | Contact Us
     </title>
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -103,87 +103,118 @@
 
     </div><!--header_menu_bg-->
 
-    <!-- Home  Page Carousel Header -->
-    <header id="homePageCarousel" class="carousel homePageSlide slide">
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('./img/food-banner.jpg');"></div>
-                <div class="container">
-                    <div class="carousel-text">
-                        <h1>Get cooking skill</h1>
-                        <p>with the cooking spot</p>
-                        <a class="btn slider-btn" href="./products.html" role="button">FOOD CATEGORY <img src="./img/icons/long-arrow-icon.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('./img/travel-banner.jpg');"></div>
-                <div class="container">
-                    <div class="carousel-text">
-                        <h1>Discover the world</h1>
-                        <p>by reading posts about nice places</p>
-                        <a class="btn slider-btn" href=".#" role="button">TRAVEL CATEGORY <img src="./img/icons/long-arrow-icon.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('./img/sport-banner.jpg');"></div>
-                <div class="container">
-                    <div class="carousel-text">
-                        <h1>Keep excited</h1>
-                        <p>by reading posts about latest sport news</p>
-                        <a class="btn slider-btn" href=".#" role="button">SPORT CATEGORY <img src="./img/icons/long-arrow-icon.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('./img/music-banner.jpg');"></div>
-                <div class="container">
-                    <div class="carousel-text">
-                        <h1>Morning vibes</h1>
-                        <p>chill mix music</p>
-                        <a class="btn slider-btn" href=".#" role="button">MUSIC CATEGORY <img src="./img/icons/long-arrow-icon.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#homePageCarousel" data-slide="prev"  >
-            <img src="./img/icons/angle-left-icon-white.png" />
-        </a>
-        <a class="right carousel-control"  href="#homePageCarousel" data-slide="next"  >
-            <img src="./img/icons/angle-right-icon-white.png" />
-        </a>
-
+    <!--contact-us-banner-->
+    <div class="contact-us-banner">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div id="triangle-up" style="top: -30px;"></div>
+                    <div id="triangle-up"></div>
                 </div><!--col-sm-12-->
             </div><!--row-->
         </div><!--container-->
-    </header>
+    </div><!--bus-page-banner-->
+
+    <!-- Title -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-title">
+                    <h1>Contact Us</h1>
+                    <p id="contact-us-title" >Let's start a conversation.</p>
+                </div>
+            </div><!--col-sm-12-->
+        </div><!--row-->
+        <div class="row content-separator"></div>
+    </div><!--container-->
 
     <!-- Content -->
-    <div class="home-page_content">
+    <div class="contact-us-content">
         <div class="container">
-            <div class="row">
+            <div class="row contact-us-row">
                 <div class="col-sm-12">
-                    <p>Our blog post are, in fact, our blog posts and belong the authors. So do not misuse them. But you are always more than welcome to share them around if you know ”just the person” who might also be interested. Perhaps you simply feel like sharing the blog post to the world! That would be perfectly fine as well.</p>
-                    <div id="triangle-down"></div>
+                    <h3 class="address" >Address</h3>
+                    <h2>Blog Website.</h2>
+                    <p>Tomsk</br>
+                    City</p>
+                </div><!--col-sm-12-->
+                <div class="col-sm-12">
+                    <h3 class="telephone">Telephone</h3>
+                    <p>Toll Free: <span>7-999-888-7766  </span>24 / 7 days per week</br>
+                       Bus: <span>7-999-888-7766</span> Mon. - Fri. ( 8:30 a.m. - 5 p.m. )</br>
+                       Fax: <span>7-999-888-7766</span>
+                    </p>
                 </div><!--col-sm-12-->
             </div><!--row-->
+            <div class="row content-separator"></div>
         </div><!--container-->
-    </div><!-- Content -->
+        <!-- contact-us-form -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="form-title" >Request Service / Ask a Question</h3>
+                </div><!--col-sm-12-->
+                <div class="col-md-6 col-sm-11 col-xs-11 contact-us-form">
+                    <form class="form-horizontal" action="./contact-us.html" method="POST" enctype="">
+                        <input type="hidden" class="form-control" id="url" name="url" value=""  >
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="*Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="company" name="company" placeholder="Company">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="*Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="*Phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <textarea rows=5 class="form-control" id="comment" name="comment" placeholder="Comments"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group" style="display: inline-table;">
+                            <div class="col-sm-2" style="display: table-cell;">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="input-assumpte" id="input-confidencial" required />
+                                    <label for="input-confidencial"></label>
+                                </div>
+                            </div>
+                            <div class="checkbox-txt" >*I'm not a robot</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn slider-btn">SUBMIT <i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></button>
+                                <button type="submit" class="btn slider-btn">CLEAR</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 form-hint">
+                                *Mandatory fields
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!--row-->
+            <div class="row support-separator1px" style="margin-bottom: 24px;"></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="arro-icon">
+                        <a href="#"><img src="./img/icons/angle-up-icon.png"/></a>
+                    </div><!--arro-icon-->
+                </div><!--col-sm-12-->
+            </div><!--row-->
+            <div id="triangle-down"></div>
+        </div><!--container-->
+    </div><!--Content-->
 
     <!-- footer -->
     <div class="footer">

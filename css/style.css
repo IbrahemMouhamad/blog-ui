@@ -70,8 +70,6 @@ div.contact-us .fa.fa-search {
 }
 .main_menu .nav.navbar-nav li a {
     color: #fff;
-    font-size: 17px;
-    font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 2;
     padding-right: 9px;
@@ -180,8 +178,6 @@ li.dropdown {
 }
 .dropdown:hover .dropbtn {
     color: #fff;
-    font-size: 17px;
-    font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 2;
     padding-right: 9px;
@@ -333,11 +329,6 @@ li.dropdown {
     padding-top: 50px;
     padding-left: 5px;
 }
-.home-page_content #triangle-down {
-    left: 51.2%;
-    bottom: -55px;
-    border-top: 31px solid #e6eaed;
-}
 
 #triangle-up {
     border-bottom: 31px solid #fff;
@@ -358,6 +349,17 @@ li.dropdown {
     left: -20px;
     position: absolute;
     bottom: -80px;
+}
+.home-page_content #triangle-down {
+    left: 51.2%;
+    bottom: -55px;
+    border-top: 31px solid #e6eaed;
+}
+
+.contact-us-content #triangle-down {
+    left: 51.2%;
+    bottom: -31px;
+    border-top: 31px solid #e6eaed;
 }
 
 .footer {
@@ -491,4 +493,167 @@ li.dropdown {
     padding: 25px 0 15px;
     text-align: right;
     font-weight: 500;
+}
+
+/************** Contact Us Page***********/
+.contact-us-banner{
+    background:url("../img/contact-us-banner.png") no-repeat center;
+    min-height: 620px;
+    margin-top: 13px;
+    margin-bottom: 38px;
+    background-size: cover;
+}
+#contact-us-title {
+    margin-bottom: 31px !important;
+}
+.contact-us-content {
+    margin-top: 5px;
+    position: relative;
+}
+.contact-us-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #465660;
+}
+.contact-us-content p {
+    font-size: 22px;
+    font-weight: 500;
+}
+.contact-us-content p span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #465660;
+}
+.contact-us-row {
+    margin-left: -13px !important;
+    margin-bottom: 15px;
+}
+.address {
+    color: #014a8e;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 22px;
+    padding-top: 27px;
+}
+.telephone {
+    color: #014a8e;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 22px;
+    padding-top: 27px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.form-title {
+    color: #014a8e;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 22px;
+    padding-top: 7px;
+    padding-left: 5px;
+    margin-bottom: 38px;
+}
+.contact-us-form {
+    padding-left: 20px;
+    padding-right: 0;
+    margin-bottom: 44px;
+}
+.contact-us-form .form-group {
+    margin-bottom: 20px;
+}
+.contact-us-form .form-control {
+    color:  #95a3ac;
+    font-size: 22px;
+    font-weight: 400;
+    height: auto;
+    padding: 9px 15px 12px 15px;
+    border-radius: 0;
+}
+.contact-us-form input.form-control[required]::placeholder {
+    font-weight: 600;
+}
+
+.contact-us-form input.form-control:valid:focus {
+    border-color: rgb(93, 219, 104);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102, 233, 120, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102, 233, 120, 0.6);
+}
+.contact-us-form input.form-control:invalid:focus {
+    border-color: rgb(219, 93, 93);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(233, 102, 141, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(233, 102, 130, 0.6);
+}
+.contact-us-form  .checkbox {
+    padding-top: 0;
+}
+.contact-us-form  .checkbox .tag {
+    color: #595959;
+    display: block;
+    float: left;
+    font-weight: bold;
+    position: relative;
+    width: 120px;
+}
+.contact-us-form  .checkbox label {
+    display: inline;
+    padding-left: 0;
+}
+.contact-us-form  .checkbox .input-assumpte {
+    display: none;
+}
+.contact-us-form  .input-assumpte + label::before {
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    display: inline-block;
+    transition-duration: 0.3s;
+    width: 52px;
+    height: 52px;
+    content: '';
+}
+.contact-us-form  .input-assumpte:checked + label::before {
+    background-color: #595959;
+}
+.contact-us-form  .checkbox-txt {
+    color: #95a3ac;
+    font-size: 22px;
+    font-weight: 400;
+    display: table-cell;
+    vertical-align: middle;
+}
+.contact-us-form  button {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #95a3ac;
+    font-size: 22px;
+    font-weight: 400;
+    height: auto;
+    padding: 9px 20px 12px 20px;
+    border-radius: 0;
+    margin-right: 24px;
+}
+
+.contact-us-form  button:hover {
+    color: #ffffff;
+    background-color: #ed2724;
+}
+.contact-us-form .form-hint {
+    color:  #95a3ac;
+    font-size: 18px;/* Approximation due to font substitution */
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.arro-icon {
+    margin-bottom: 126px;
+    margin-top: 42px;
+    text-align: center;
+}
+.arro-icon .fa.fa-angle-up {
+    color: #95a2ac;
+    font-size: 95px;
+    letter-spacing: 2px;
 }
