@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>
-        Blog | Contact Us
+        Blog | Posts
     </title>
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -22,7 +22,7 @@
     <div class="container">
         <div class="row header-row">
             <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 no-padding logo">
-                <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+                <a href="./index.html"><img src="./img/logo.png" alt="Blog"></a>
             </div> <!-- logo  -->
             <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 no-padding contact-us">
                 <ul class="">
@@ -103,118 +103,266 @@
 
     </div><!--header_menu_bg-->
 
-    <!--contact-us-banner-->
-    <div class="contact-us-banner">
+    <!-- Home  Page Carousel Header -->
+    <header id="homePageCarousel" class="carousel homePageSlide slide">
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('./img/food-banner.jpg');"></div>
+                <div class="container">
+                    <div class="carousel-text">
+                        <h1>Get cooking skill</h1>
+                        <p>with the cooking spot</p>
+                        <a class="btn slider-btn" href="./products.html" role="button">FOOD CATEGORY <img src="./img/icons/long-arrow-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('./img/travel-banner.jpg');"></div>
+                <div class="container">
+                    <div class="carousel-text">
+                        <h1>Discover the world</h1>
+                        <p>by reading posts about nice places</p>
+                        <a class="btn slider-btn" href=".#" role="button">TRAVEL CATEGORY <img src="./img/icons/long-arrow-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('./img/sport-banner.jpg');"></div>
+                <div class="container">
+                    <div class="carousel-text">
+                        <h1>Keep excited</h1>
+                        <p>by reading posts about latest sport news</p>
+                        <a class="btn slider-btn" href=".#" role="button">SPORT CATEGORY <img src="./img/icons/long-arrow-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('./img/music-banner.jpg');"></div>
+                <div class="container">
+                    <div class="carousel-text">
+                        <h1>Morning vibes</h1>
+                        <p>chill mix music</p>
+                        <a class="btn slider-btn" href=".#" role="button">MUSIC CATEGORY <img src="./img/icons/long-arrow-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#homePageCarousel" data-slide="prev"  >
+            <img src="./img/icons/angle-left-icon-white.png" alt="" />
+        </a>
+        <a class="right carousel-control"  href="#homePageCarousel" data-slide="next"  >
+            <img src="./img/icons/angle-right-icon-white.png" alt="" />
+        </a>
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div id="triangle-up"></div>
+                    <div id="triangle-up" style="top: -30px;"></div>
                 </div><!--col-sm-12-->
             </div><!--row-->
         </div><!--container-->
-    </div><!--bus-page-banner-->
-
-    <!-- Title -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="page-title">
-                    <h1>Contact Us</h1>
-                    <p id="contact-us-title" >Let's start a conversation.</p>
-                </div>
-            </div><!--col-sm-12-->
-        </div><!--row-->
-        <div class="row content-separator"></div>
-    </div><!--container-->
+    </header>
 
     <!-- Content -->
-    <div class="contact-us-content">
-        <div class="container">
-            <div class="row contact-us-row">
-                <div class="col-sm-12">
-                    <h3 class="address" >Address</h3>
-                    <h2>Blog Website.</h2>
-                    <p>Tomsk<br />
-                    City</p>
-                </div><!--col-sm-12-->
-                <div class="col-sm-12">
-                    <h3 class="telephone">Telephone</h3>
-                    <p>Toll Free: <span>7-999-888-7766  </span>24 / 7 days per week<br />
-                       Bus: <span>7-999-888-7766</span> Mon. - Fri. ( 8:30 a.m. - 5 p.m. )<br />
-                       Fax: <span>7-999-888-7766</span>
-                    </p>
-                </div><!--col-sm-12-->
-            </div><!--row-->
-            <div class="row content-separator"></div>
-        </div><!--container-->
-        <!-- contact-us-form -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h3 class="form-title" >Request Service / Ask a Question</h3>
-                </div><!--col-sm-12-->
-                <div class="col-md-6 col-sm-11 col-xs-11 contact-us-form">
-                    <form class="form-horizontal">
-                        <input type="hidden" class="form-control" id="url" name="url" value=""  >
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="*Name" required>
+    <div class="container all-posts_content">
+        <ul class="nav nav-pills tabular-pills">
+            <li class="active">
+                <a data-toggle="pill" href="#Sports">
+                    <h3>SPORTS</h3>
+                    <div class="heading-pills"></div>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="pill" href="#Music">
+                    <h3>MUSIC</h3>
+                    <div class="heading-pills"></div>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="pill" href="#Travel">
+                    <h3>TRAVEL</h3>
+                    <div class="heading-pills"></div>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="pill" href="#Fashion" style="    padding-left: 0;">
+                    <h3 style="padding-left: 3px;" >FASHION</h3>
+                    <div class="heading-pills"></div>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="pill" href="#Politics">
+                    <h3>POLITICS</h3>
+                    <div class="heading-pills"></div>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="pill" href="#Finance">
+                    <h3>FINANCE</h3>
+                    <div class="heading-pills"></div>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="pill" href="#Fitness">
+                    <h3>FITNESS</h3>
+                    <div class="heading-pills"></div>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="pill" href="#Lifestyle">
+                    <h3>LIFESTYLE</h3>
+                    <div class="heading-pills"></div>
+                </a>
+            </li>
+        </ul>
+        <!-- POSTS based on selected category tab-->
+        <div class="tab-content post-category-container">
+            <div id="Sports" class="tab-pane fade in active">
+                <h1 class="category-heading">Sports</h1>
+                <p  class="category-sub-heading">
+                    All posts in sports category.
+                </p>
+                <div class="row tab-header-separator1px"></div>
+                <table class="posts">
+                    <tr>
+                        <td>
+                            <h1>England vs Hungary: Predictions, odds & betting tips</h1>
+                            <h1 class="sub-title" >by ibrahem, 16-10-2021</h1>
+                            <p>
+                                Having run out comfortable 4-0 winners in the reverse encounter, 
+                                Al Hain-Cole expects the Three Lions to ease to victory over Rossi's men...
+                            </p>
+                        </td>
+                        <td>
+                            <div class="post-image">
+                                <img src="./img/posts/1.jpg" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control" id="company" name="company" placeholder="Company">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>Argentina vs Peru: Predictions, tips & betting odds</h1>
+                            <h1 class="sub-title" >by ibrahem, 16-10-2021</h1>
+                            <p>
+                                The hosts have been in strong defensive form and should be able to 
+                                keep out a poor Peruvian attack when they meet in Buenos Aires...
+                            </p>
+                        </td>
+                        <td>
+                            <div class="post-image">
+                                <img src="./img/posts/2.jpg" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="*Email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>Brazil vs Uruguay: Predictions, tips & betting odds</h1>
+                            <h1 class="sub-title" >by ibrahem, 16-10-2021</h1>
+                            <p>
+                                The hosts have not conceded a goal at home in a World Cup qualifier 
+                                since 2016 and Goal is backing that superb defensive run to continue...
+                            </p>
+                        </td>
+                        <td>
+                            <div class="post-image">
+                                <img src="./img/posts/3.png" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control" id="phone" name="phone" placeholder="*Phone" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>Faroe Islands vs Scotland: Predictions, odds & betting tips</h1>
+                            <h1 class="sub-title" >by ibrahem, 16-10-2021</h1>
+                            <p>
+                                After the exhilaration of the Israel win, Al Hain-Cole thinks 
+                                the Tartan Army could be in for a frustrating 90 minutes against Ericson's men...
+                            </p>
+                        </td>
+                        <td>
+                            <div class="post-image">
+                                <img src="./img/posts/4.jpg" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <textarea rows=5 class="form-control" id="comment" name="comment" placeholder="Comments"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group" style="display: inline-table;">
-                            <div class="col-sm-2" style="display: table-cell;">
-                                <div class="checkbox">
-                                    <input type="checkbox" class="input-assumpte" id="input-confidencial" required />
-                                    <label for="input-confidencial"></label>
-                                </div>
-                            </div>
-                            <div class="checkbox-txt" >*I'm not a robot</div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <button type="submit" class="btn slider-btn">SUBMIT <i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></button>
-                                <button type="submit" class="btn slider-btn">CLEAR</button>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12 form-hint">
-                                *Mandatory fields
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div><!--row-->
-            <div class="row support-separator1px" style="margin-bottom: 24px;"></div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="arro-icon">
-                        <a href="#"><img src="./img/icons/angle-up-icon.png" alt=""/></a>
-                    </div><!--arro-icon-->
-                </div><!--col-sm-12-->
-            </div><!--row-->
-            <div id="triangle-down"></div>
-        </div><!--container-->
-    </div><!--Content-->
+                        </td>
+                    </tr>
+                </table>
+                <div class="row separator1px"></div>
+            </div>
+            <div id="Music" class="tab-pane fade in">
+                <h1 class="category-heading">Music</h1>
+                <p  class="category-sub-heading">
+                    All posts in music category.
+                </p>
+                <div class="row tab-header-separator1px"></div>
+                <!-- 1 -->
+                <div class="row separator1px"></div>
+            </div>
+            <div id="Travel" class="tab-pane fade in">
+                <h1 class="category-heading">Travel</h1>
+                <p  class="category-sub-heading">
+                    All posts in travel category.
+                </p>
+                <div class="row tab-header-separator1px"></div>
+                <!-- 1 -->
+                <div class="row separator1px"></div>
+            </div>
+            <div id="Fashion" class="tab-pane fade in">
+                <h1 class="category-heading">Fashion</h1>
+                <p  class="category-sub-heading">
+                    All posts in fashion category.
+                </p>
+                <div class="row tab-header-separator1px"></div>
+                <!-- 1 -->
+                <div class="row separator1px"></div>
+            </div>
+            <div id="Politics" class="tab-pane fade in">
+                <h1 class="category-heading">Politics</h1>
+                <p  class="category-sub-heading">
+                    All posts in politics category.
+                </p>
+                <div class="row tab-header-separator1px"></div>
+                <!-- 1 -->
+                <div class="row separator1px"></div>
+            </div>
+            <div id="Finance" class="tab-pane fade in">
+                <h1 class="category-heading">Finance</h1>
+                <p  class="category-sub-heading">
+                    All posts in finance category.
+                </p>
+                <div class="row tab-header-separator1px"></div>
+                <!-- 1 -->
+                <div class="row separator1px"></div>
+            </div>
+            <div id="Fitness" class="tab-pane fade in">
+                <h1 class="category-heading">Fitness</h1>
+                <p  class="category-sub-heading">
+                    All posts in fitness category.
+                </p>
+                <div class="row tab-header-separator1px"></div>
+                <!-- 1 -->
+                <div class="row separator1px"></div>
+            </div>
+            <div id="Lifestyle" class="tab-pane fade in">
+                <h1 class="category-heading">Lifestyle</h1>
+                <p  class="category-sub-heading">
+                    All posts in lifestyle category.
+                </p>
+                <div class="row tab-header-separator1px"></div>
+                <!-- 1 -->
+                <div class="row separator1px"></div>
+            </div>
+        </div>
+        <div class="row support-separator1px"></div>
+    </div><!-- Content -->
 
     <!-- footer -->
     <div class="footer">

@@ -326,9 +326,9 @@ li.dropdown {
 }
 .home-page_content p {
     color:  #6c7b86;
-    font-size: 38px;/* Approximation due to font substitution */
+    font-size: 38px;
     font-weight: 400;
-    line-height: 52px;/* Approximation due to font substitution */
+    line-height: 52px;
     text-align: left;
     padding-top: 50px;
     padding-left: 5px;
@@ -361,6 +361,12 @@ li.dropdown {
 }
 
 .contact-us-content #triangle-down {
+    left: 51.2%;
+    bottom: -31px;
+    border-top: 31px solid #e6eaed;
+}
+
+.all-posts_content #triangle-down {
     left: 51.2%;
     bottom: -31px;
     border-top: 31px solid #e6eaed;
@@ -652,4 +658,143 @@ li.dropdown {
     color: var(--gray1);
     font-size: 95px;
     letter-spacing: 2px;
+}
+
+/************ tabular-tabs ***************/
+.all-posts_content {
+    margin-top: 68px;
+}
+ul.tabular-pills {
+    display: table;
+    width: 1188px;
+    margin-left: -26px;
+    margin-right: -26px;
+}
+.tabular-pills li {
+    display: table-cell;
+}
+.tabular-pills li:nth-child(5) {
+    margin-left: 0;
+}
+.tabular-pills li+li {
+    margin-left: 64px;
+}
+.tabular-pills li:nth-child(n+5):nth-child(-n+8) {
+    margin-top: 34px;
+}
+.tabular-pills li a {
+    text-align: center;
+}
+.tabular-pills li a img:first-child {
+    padding: 1px 0 2px 0;
+}
+.tabular-pills li a h3 {
+    color: #95a3ac;
+    font-size: 25px; /* Approximation due to font substitution */
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    white-space: nowrap;
+}
+.tabular-pills li a .heading-pills {
+    width: 201px;
+    height: 5px;
+    display: inline-block;
+    float: none;
+    margin: auto;
+    background-color: #c6cfd6;
+}
+.tabular-pills li a:hover, .tabular-pills li a:active, .tabular-pills li a:focus,
+.tabular-pills li.active a, .tabular-pills li.active a:hover, .tabular-pills li.active a:active, .tabular-pills li.active a:focus {
+    box-shadow: 0 0 11px 5px #dfdedf;
+    background-color: #ffffff;
+    border-radius: 0;
+}
+.tabular-pills li a:hover .heading-pills, .tabular-pills li a:active .heading-pills, .tabular-pills li a:focus .heading-pills,
+.tabular-pills li.active a .heading-pills, .tabular-pills li.active a:hover .heading-pills, .tabular-pills li.active a:active .heading-pills, .tabular-pills li.active a:focus .heading-pills {
+    background-color: #6c7d87;
+}
+.tabular-pills li a:hover h3, .tabular-pills li a:active h3, .tabular-pills li a:focus h3,
+.tabular-pills li.active a h3, .tabular-pills li.active a:hover h3, .tabular-pills li.active a:active h3, .tabular-pills li.active a:focus h3 {
+    color: #104885;
+}
+.post-category-container {
+    margin-top: 36px;
+}
+.category-heading {
+    margin-left: -1px;
+    color:  val(--blue2);
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.category-sub-heading {
+    padding-top: 7px;
+    margin-left: -1px;
+    color:  val(--blue2);
+    font-size: 41px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.category-heading-img {
+    margin-top: -40px;
+    text-align: right;
+}
+.separator1px {
+    background:url("../img/content-separator1px.png") no-repeat center;
+    background-size: cover;
+    min-height: 12px;
+    margin-left: -21px !important;
+    margin-right: -29px !important;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.tab-header-separator1px {
+    background:url("../img/content-separator1px.png") no-repeat center;
+    background-size: cover;
+    min-height: 12px;
+    margin-left: -21px !important;
+    margin-right: -29px !important;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+table.posts {
+    display: block;
+}
+table.posts tr {
+    border-bottom: solid 1px #96a4ad;
+}
+table.posts tr:last-child {
+    border-bottom: 0px;
+}
+
+table.posts td > h1 {
+    color: #004b8d;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 14px;
+}
+
+table.posts td  h1.sub-title {
+    font-size: 20px;
+    margin-top: -10px;
+    font-weight: 500;
+}
+
+table.posts td  p {
+    color: #6c7b86;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-left: 2px;
+    margin-top: -3px;
+}
+.post-image {
+    padding-left: 55px;
+    padding-top: 10px;
+}
+table.posts td  img {
+    width: 440px;
+    height: 245px;
+    padding-bottom: 19px;
 }
