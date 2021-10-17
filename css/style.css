@@ -316,6 +316,18 @@ li.dropdown {
     -o-background-size: cover;
 }
 
+.food {
+    background-image:url('../img/food-banner.jpg');
+}
+.travel {
+    background-image:url('../img/travel-banner.jpg');
+}
+.sport {
+    background-image:url('../img/sport-banner.jpg');
+}
+.music {
+    background-image:url('../img/music-banner.jpg');
+}
 .home-page_content {
     background: #e6eaed;
     margin-top: 28px;
@@ -797,4 +809,5 @@ table.posts td  img {
     width: 440px;
     height: 245px;
     padding-bottom: 19px;
+    box-sizing: border-box;
 }
