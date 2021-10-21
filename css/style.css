@@ -850,3 +850,12 @@ table.posts td  img {
     width: 800px;
     float: left;
 }
+/* FIXED MENU */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin: 0;
+}
