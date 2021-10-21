@@ -218,13 +218,6 @@ li.dropdown {
     margin-right: -29px !important;
 }
 /************** Home Page***********/
-.home-page-banner{
-    background:url("../img/alpine-products-banner.jpg") no-repeat center;
-    min-height: 656px;
-    margin-top: 13px;
-    margin-bottom: 38px;
-    background-size: cover;
-}
 .homePageSlide{
     margin-top: 13px;
     margin-bottom: 26px;
@@ -336,18 +329,6 @@ li.dropdown {
     background-image: -o-linear-gradient(left, #fff, #e6eaed 50%, #e6eaed 50%, #fff);
     background-image: -webkit-linear-gradient(left, #fff, #e6eaed 50%, #e6eaed 50%, #fff);
     background-image: -moz-linear-gradient(left, #fff, #e6eaed 50%, #e6eaed 50%, #fff);
-}
-.home-page_content .row {
-    margin-right: -49px !important;
-}
-.home-page_content p {
-    color:  #6c7b86;
-    font-size: 38px;
-    font-weight: 400;
-    line-height: 52px;
-    text-align: left;
-    padding-top: 50px;
-    padding-left: 5px;
 }
 
 #triangle-up {
@@ -820,4 +801,52 @@ table.posts td  img {
     height: 245px;
     padding-bottom: 19px;
     box-sizing: border-box;
+}
+
+/* SIDEBAR */
+.sidebar {
+    float: right;
+    width: 290px;
+    margin-top: 10px;
+}
+.sidebar > h3 {
+    color:  #184e75;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disclosure-closed;
+}
+
+.sidebar  a {
+    color: var(--blue2);
+}
+
+.home-page_content {
+    width: 800px;
+    float: left;
+    margin-right: 10px;
+}
+
+.home-page_content p {
+    color:  #6c7b86;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.contact-us-page .sidebar {
+    margin-top: -200px;
+}
+.contact-us-content {
+    width: 800px;
+    float: left;
 }
