@@ -871,3 +871,67 @@ table.posts td  img {
     background-color: #060606;
     font-size: 15px;
 }
+/* Animation */
+@keyframes zoom {
+	0% {
+		transform: scale(0.2, 0.2);
+	}
+    50% {
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.logo {
+    animation: zoom 2s ease-in-out;
+    animation-delay: 0.1s;
+}
+
+@keyframes drop-with-opacity {
+	0% {
+		opacity: 1;
+		transform: translateY(-30px);
+	}
+    50% {
+		opacity: 0.5;
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.post-image {
+    animation: drop-with-opacity 2s ease;
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(60px);
+	}
+}
+
+#send-question.remove {
+    animation: fade-out 2s ease;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		transform: translateY(60px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+#thank-message {
+    animation: fade-in 2s ease;
+}

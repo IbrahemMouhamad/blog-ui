@@ -131,7 +131,7 @@
     <div class="container contact-us-page">
         <!-- Sidebar -->
         <div class="sidebar">
-            <h3>Latest Posts</h2>
+            <h3>Latest Posts</h3>
             <ul>
                 <li><a href="#">England vs Hungary: Predictions, odds & betting tips</a></li>
                 <li><a href="#">Faroe Islands vs Scotland: Predictions, odds & betting tips</a></li>
@@ -156,14 +156,13 @@
                 </div><!--col-sm-12-->
             </div><!--row-->
             <div class="row content-separator"  style="width: 800px;"></div>
-            </div><!--container-->
             <!-- contact-us-form -->
-            <div class="row">
+            <div id="send-question" class="row">
                 <div class="col-xs-12">
                     <h3 class="form-title" >Request Service / Ask a Question</h3>
                 </div><!--col-sm-12-->
                 <div class="col-md-6 col-sm-11 col-xs-11 contact-us-form">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" onsubmit="return contactUs(event)">
                         <input type="hidden" class="form-control" id="url" name="url" value=""  >
                         <div class="form-group">
                             <div class="col-sm-12">
@@ -213,6 +212,11 @@
                     </form>
                 </div>
             </div><!--row-->
+            <div id="thank-message" class="row" style="display: none;">
+                <div class="col-xs-12">
+                    <h3 class="form-title" >Thank You for contacting us!</h3>
+                </div><!--col-sm-12-->
+            </div>
             <div class="row support-separator1px" style="margin-bottom: 24px;"></div>
             <div class="row">
                 <div class="col-sm-12">

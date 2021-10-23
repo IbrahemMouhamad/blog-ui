@@ -12,3 +12,11 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
   });
+
+function contactUs(e) {
+  e.preventDefault();
+  document.getElementById('send-question').classList.add('remove');
+  setTimeout(() => {document.getElementById('send-question').style.display = 'none'}, 2000);
+  setTimeout(() => {document.querySelector('#thank-message').style.display = 'block'}, 2000);
+  return false;
+}
