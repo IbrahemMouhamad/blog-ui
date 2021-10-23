@@ -19,6 +19,7 @@ body {
 /******* Header **************/
 .header-row {
     margin-top: 12px;
+    margin-bottom: 27px;
     margin-left: -2px !important;
     margin-right: -2px !important;
 }
@@ -58,11 +59,11 @@ div.contact-us .fa.fa-search {
     padding-right: 0 !important;
 }
 .main_menu-container {
-
-    background: var(--gray2);
-    margin-top: 27px;
+    background-color: var(--gray2);
     min-height: 62px;
     max-height: 62px;
+    transition: 1.5s font-size, position, background-color;
+    -webkit-transition:  1.5s font-size, position, background-color;
 }
 .main_menu-row {
     margin-right: -50px !important;
@@ -166,13 +167,18 @@ li.dropdown {
 }
 .dropdown-content a:hover
 {
+    transform: translateX(15px);
+    margin-right: 15px;
+}
+.dropdown-content a:hover
+{
     color:  #004b8f !important;
     font-size: 17px !important;
     font-weight: 600 !important;
     line-height: 36px !important;
     background: #f9f9f9 !important;
     border: none !important;
-    margin-left: 0 !important;;
+    margin-left: 0 !important;
 }
 .dropdown-content a:hover i {
     color:   var(--blue2) !important;
@@ -610,7 +616,7 @@ li.dropdown {
     background-color: #fafafa;
     border: 1px solid #cacece;
     display: inline-block;
-    transition-duration: 0.3s;
+    transition-duration: 0.8s;
     width: 52px;
     height: 52px;
     content: '';
@@ -684,16 +690,17 @@ ul.tabular-pills {
 }
 .tabular-pills li a {
     text-align: center;
-    outline-color: #d5d5d5;
+    outline-color: #b6b6b6;
     outline-style: dotted;
     outline-width: 1px;
+    transform: skewX(10deg);
 }
 .tabular-pills li a img:first-child {
     padding: 1px 0 2px 0;
 }
 .tabular-pills li a h3 {
     color: #95a3ac;
-    font-size: 25px; /* Approximation due to font substitution */
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 2.5px;
     white-space: nowrap;
@@ -707,10 +714,13 @@ ul.tabular-pills {
     background-color: #c6cfd6;
 }
 .tabular-pills li a:hover, .tabular-pills li a:active, .tabular-pills li a:focus,
-.tabular-pills li.active a, .tabular-pills li.active a:hover, .tabular-pills li.active a:active, .tabular-pills li.active a:focus {
+.tabular-pills li.active a, .tabular-pills li.active a:hover,
+.tabular-pills li.active a:active, .tabular-pills li.active a:focus {
     box-shadow: 0 0 11px 5px #dfdedf;
     background-color: #ffffff;
     border-radius: 0;
+    transform: scale(1.1);
+    outline: 0;
 }
 .tabular-pills li a:hover .heading-pills, .tabular-pills li a:active .heading-pills, .tabular-pills li a:focus .heading-pills,
 .tabular-pills li.active a .heading-pills, .tabular-pills li.active a:hover .heading-pills, .tabular-pills li.active a:active .heading-pills, .tabular-pills li.active a:focus .heading-pills {
@@ -858,4 +868,6 @@ table.posts td  img {
     left: 0;
     z-index: 1030;
     margin: 0;
+    background-color: #060606;
+    font-size: 15px;
 }
