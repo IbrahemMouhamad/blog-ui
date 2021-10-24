@@ -935,3 +935,100 @@ table.posts td  img {
 #thank-message {
     animation: fade-in 2s ease;
 }
+
+/* Latest Posts */
+.latest-posts-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-slider {
+    margin: 20px 0px;
+}
+
+.categories-slider .item > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories-slider .item .item-part {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+}
+
+.categories-slider .item .item-part  a  img {
+    height: 200px;
+    width: 200px;
+}
+
+.categories-slider .item .item-part  h3 {
+	font-size: 23px;
+	letter-spacing: 1px;
+    margin-top: 0px;
+}
+
+.categories-slider .item .item-part  div {
+    border: 2px solid #c4cdd4;
+    width: 180px;
+}
+.categories-slider .left.carousel-control, .right.carousel-control {
+    background: none;
+    color: #96a3ad;
+    font-size: 75px;
+    opacity: 1;
+    width: auto;
+}
+.categories-slider .right.carousel-control {
+    right: -50px;
+    top: 21%;
+}
+.categories-slider .left.carousel-control {
+    left: -50px;
+    top: 21%;
+}
+
+.latest-posts {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.latest-posts .post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--gray2);
+    padding: 15px 5px;
+}
+.latest-posts .post .meta {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-grow: 4;
+    margin: 0px 20px 10px 0px;
+}
+.latest-posts .post .meta h2 {
+    margin: 0px;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--blue1);
+}
+.latest-posts .post .meta h4 {
+    margin: 8px 0px;
+    font-size: 15px;
+}
+.latest-posts .post .meta p {
+    margin: 8px 0px;
+    font-size: 15px;
+    font-weight: 400;
+    align-self: flex-end;
+}
+.latest-posts .post img {
+    flex-grow: 1;
+    width: 400px;
+    height: 205px;
+}

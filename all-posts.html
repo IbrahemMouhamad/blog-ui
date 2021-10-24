@@ -87,7 +87,7 @@
                                 </div>
                             </li>
                             <li><a href="./all-posts.html"> ALL POSTS <span>|</span></a></li>
-                            <li><a href="#"> LATEST POSTS <span>|</span></a></li>
+                            <li><a href="./latest-posts.html"> LATEST POSTS <span>|</span></a></li>
                             <li><a href="#"> TRENDS <span>|</span></a></li>
                             <li><a href="./contact-us.html"> CONTACT US <span>|</span></a></li>
                             <li><a href="#"> FEEDBACK <span>|</span></a></li>
@@ -406,19 +406,6 @@
     <script src="js/script.js" ></script>
     <script>
         $(document).ready(function() {
-            $('.carousel').carousel({
-                pause: true,
-                interval: 5000, //changes the speed
-                autoPlay:true
-            });
-            $( ".home-page_title>ul>li>a" ).hover(
-                    function() {
-                        $(this).children('img:nth-child(3)').attr('src', './img/icons/pill-footer-icon-hover.png');
-                    },
-                    function() {
-                        $(this).children('img:nth-child(3)').attr('src', './img/icons/pill-footer-icon.png');
-                    }
-            );
             $( ".navbar-nav>li" ).hover(
                     function() {
                         $(this).prev().find("span").css("visibility","hidden");
