@@ -948,8 +948,7 @@ table.posts td  img {
 
 .categories-slider .item > div {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -1007,8 +1006,6 @@ table.posts td  img {
 .latest-posts .post .meta {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    flex-grow: 4;
     margin: 0px 20px 10px 0px;
 }
 .latest-posts .post .meta h2 {
@@ -1016,19 +1013,106 @@ table.posts td  img {
     font-size: 26px;
     font-weight: 600;
     color: var(--blue1);
+    flex-basis: auto;
+    flex-grow: 0;
 }
 .latest-posts .post .meta h4 {
-    margin: 8px 0px;
     font-size: 15px;
+    flex-basis: auto;
+    flex-grow: 0;
 }
 .latest-posts .post .meta p {
-    margin: 8px 0px;
+    margin: 0;
     font-size: 15px;
     font-weight: 400;
     align-self: flex-end;
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
 }
 .latest-posts .post img {
     flex-grow: 1;
     width: 400px;
     height: 205px;
+}
+
+/* Membership page */
+
+.membership-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #e1e1e1;
+    width: 100%;
+}
+.membership-content .page-title {
+    text-align: center;
+}
+.memberships {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10px 30px 10px;
+    background-color: black;
+    margin: 15px auto 30px auto;
+    width: 1178px;
+}
+
+.memberships .membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    border: 1px solid #e6e5e6;
+    border-right: none;
+}
+.memberships .membership .title {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: #FDC500;
+    width: 100%;
+}
+.memberships .membership .title p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.memberships .membership .title h2 {
+    font-size: 34px
+}
+.membership .hori-seprator {
+    border: 1px solid #c4cdd4;
+    width: 200px;
+    margin: 30px 0px;
+}
+
+.membership .details {
+    color: var(--white1);
+}
+
+.membership .details h4 {
+    font-size: 15px;
+}
+
+.membership.highlighted {
+    border: 2px solid #FDC500;
+}
+
+.membership button {
+    color: #FDC500;
+    border: 1px solid #FDC500;
+    display: inline-flex;
+    padding: 8px 20px;
+    align-items: center;
+    margin-right: 5px;
+    border-radius: 0;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+.membership button:hover {
+    background-color: #FDC500;
+    color: black;
+}
+.membership button span {
+    padding-left: 20px;
 }
