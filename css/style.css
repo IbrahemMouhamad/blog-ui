@@ -1120,14 +1120,46 @@ table.posts td  img {
 /* Post */
 .post-content {
     display: grid;
-    grid: repeat(4, auto) / 35% 35% 30%;
+    grid: repeat(3, auto) / 35% 35% 30%;
     grid-gap: 10px 15px;
     margin: 20px 0px;
 }
-
+.post-content .title {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    color: white;
+    z-index: 2;
+    padding: 10px 0 20px 20px;
+    vertical-align: baseline;
+    align-self: flex-end;
+    background: black;
+}
+.post-content .meta {
+    grid-column: 1 / 4;
+    order: 4;
+}
+.post-content .image {
+    grid-row: 1;
+    grid-column: 1 / 4;
+}
+.post-content .sidebar {
+    grid-column: 3;
+    order: 3;
+}
+.post-content .image img {
+    width: 100%;
+}
 .post-content .text {
     text-align: justify;
     font-weight: 500;
-    padding-right: 10px;
-    border-right: 1px solid #eac0c0;
+    padding-right: 20px;
+    order: 2;
+}
+.post-content .sidebar ul {
+    padding-left: 40px;
+}
+.post-content .categories-slider {
+    grid-column: 1 / 4;
+    margin-top: 40px;
+    order: 5;
 }
