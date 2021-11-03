@@ -1120,46 +1120,50 @@ table.posts td  img {
 /* Post */
 .post-content {
     display: grid;
-    grid: repeat(3, auto) / 35% 35% 30%;
+    grid: [start-image] auto [end-image] auto [start-text] auto [end-text]
+        / [first-column] 35% 35% [start-sidebar] 30% [end-sidebar];
+    grid-template-areas:
+        'title-image title-image siebar'
+        'meta meta siebar'
+        '. . siebar'
+        '. . .'
+        ;
     grid-gap: 10px 15px;
     margin: 20px 0px;
 }
 .post-content .title {
-    grid-row: 1;
-    grid-column: 1 / 4;
+    grid-area: title-image;
     color: white;
     z-index: 2;
-    padding: 10px 0 20px 20px;
+    padding: 0px 0 10px 10px;
     vertical-align: baseline;
     align-self: flex-end;
     background: black;
 }
 .post-content .meta {
-    grid-column: 1 / 4;
-    order: 4;
+    grid-area: meta;
+    text-decoration: underline;
 }
 .post-content .image {
-    grid-row: 1;
-    grid-column: 1 / 4;
+    grid-area: title-image;
 }
 .post-content .sidebar {
-    grid-column: 3;
-    order: 3;
-}
-.post-content .image img {
-    width: 100%;
+    grid-area: siebar;
 }
 .post-content .text {
     text-align: justify;
     font-weight: 500;
     padding-right: 20px;
-    order: 2;
+    grid-row: 3;
+}
+.post-content .categories-slider {
+    grid-column: first-column / end-sidebar;
+    margin-top: 40px;
+    order: 5;
 }
 .post-content .sidebar ul {
     padding-left: 40px;
 }
-.post-content .categories-slider {
-    grid-column: 1 / 4;
-    margin-top: 40px;
-    order: 5;
+.post-content .image img {
+    width: 100%;
 }
