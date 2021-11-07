@@ -212,7 +212,48 @@
         width: 160px;
         margin: 24px 0px;
     }
-}
+    /* Post */
+    .post-content .sidebar {
+        grid-column: 1;
+    }
+    .post-content .categories-slider .item .item-part a img {
+        height: 150px;
+        width: 150px;
+    }
+    .post-content .categories-slider {
+        width: 95%;
+    }
+    .post-content {
+        grid: auto auto auto auto / 100%;
+        grid-template-areas:
+        'title-image'
+        'meta'
+        '.' '.';
+        text-align: center;
+        grid-gap: 0;
+    }
+    .post-content .categories-slider {
+        grid-column: 1;
+    }
+    .post-content .text:nth-child(6) {
+        grid-row: 4;
+    }
+    .post-content .title {
+        padding: 0;
+        text-align: center;
+    }
+    .post-content .title h2 {
+        font-size: 20px;
+    }
+    .post-content .meta h4 {
+        text-align: center;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .post-content .text {
+        text-align: center;
+        padding-right: 0;
+    }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
@@ -238,7 +279,6 @@
     }
     .main_menu-container {
         min-height: 50px;
-        margin-top: 10px;
         max-height: inherit;
     }
     .navbar-toggle {
