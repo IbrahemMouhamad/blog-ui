@@ -574,6 +574,7 @@ li.dropdown {
     padding-left: 20px;
     padding-right: 0;
     margin-bottom: 44px;
+    width: 91%;
 }
 .contact-us-form .form-group {
     margin-bottom: 20px;
@@ -1030,6 +1031,7 @@ table.posts td  img {
     display: flex;
     flex-basis: auto;
     flex-grow: 1;
+    text-align: justify;
 }
 .latest-posts .post img {
     flex-grow: 1;
